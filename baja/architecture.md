@@ -65,6 +65,7 @@ Modus Operandi: **Build something that works *well*.**
 * Everything talks on one network, so logging data is easy
 * We can reuse major design chunks. See similarities between Honeybee and VCM, or Steering Wheel module and Elmeg, etc etc.
 * As expandable as your heart desires. Only limited by CAN 2.0B bandwidth...
+* Two seriously kick-ass steering wheels.
 ### The Bad
 * Limited by CAN 2.0B bandwidth. 
 No live camera streams on the car's bus, or high rate telemetry.
@@ -90,13 +91,16 @@ The main goal with Gen 2 was to consolidate hardware to lower costs and improve 
 *THE FUTURE*
 
 No idea what this entails. I have a couple of ideas though.
-* Custom IMU/INS solution. We've tried this two other times, with LoCoBo and Gofastboatsmojito. Neither panned out particularly far, but this is something we seriously need.
-* Higher bandwidth backbone. Switch the fore and aft of the car to something like an ethernet backbone, use Cyphal/UDP over it, then use Cyphal/CAN to communicate with end-nodes. This might require some "routing" software though which would be an interesting challenge.
+* Custom IMU/INS solution. We've tried this two other times, with LoCoBo and Gofastboatsmojito. Neither panned out particularly far, but this is something we seriously need. Go screw with different ICs, or even fuse multiple ICs together.
+* Higher bandwidth backbone. Switch the front and rear of the car to an ethernet backbone, use Cyphal/UDP over it, then use Cyphal/CAN to communicate with end-nodes. This might require some "routing" software which would be an interesting challenge.
 * ECVT. The holy grail. This trade needs to happen with drivetrain involvement but there's no reason you can't spend time on it.
 * E-clutch. A clutch pack that can get stuck anywhere in the driveline, within reason.
 Could be used for e-4wd, torque vectoring, you name it.
 * Better RF link. Block 2 uses wifi for everything. Find a longer range over air link and do something cool with it.
 * X2, or a valve driver update. Redesign my goofy switch to be more efficient, do sensorless flow estimation, package it better.
-* Home-built wheel force tranducer. You can do it.
+* Home-built wheel force tranducer. You can do it, and it'd be insanely useful.
 * More driver augmentation. How can you use these sensors to let the driver know what's actually going on?
 How can you help them make better decisions?
+* Steering wheel improvements. Continue down the screen path. The current wheel has soooo much power to spare.
+Think of all the UI/UX stuff you can do on that wheel. What other functionality can you squeeze in? 
+haptics? paddle shifters that do something useful? driver augmentation like above?
