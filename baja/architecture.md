@@ -92,3 +92,11 @@ The main goal with Gen 2 was to consolidate hardware to lower costs and improve 
 No idea what this entails. I have a couple of ideas though.
 * Custom IMU/INS solution. We've tried this two other times, with LoCoBo and Gofastboatsmojito. Neither panned out particularly far, but this is something we seriously need.
 * Higher bandwidth backbone. Switch the fore and aft of the car to something like an ethernet backbone, use Cyphal/UDP over it, then use Cyphal/CAN to communicate with end-nodes. This might require some "routing" software though which would be an interesting challenge.
+* ECVT. The holy grail. This trade needs to happen with drivetrain involvement but there's no reason you can't spend time on it.
+* E-clutch. A clutch pack that can get stuck anywhere in the driveline, within reason.
+Could be used for e-4wd, torque vectoring, you name it.
+* Better RF link. Block 2 uses wifi for everything. Find a longer range over air link and do something cool with it.
+* X2, or a valve driver update. Redesign my goofy switch to be more efficient, do sensorless flow estimation, package it better.
+* Home-built wheel force tranducer. You can do it.
+* More driver augmentation. How can you use these sensors to let the driver know what's actually going on?
+How can you help them make better decisions?
